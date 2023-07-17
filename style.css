@@ -1,0 +1,148 @@
+@font-face {
+    font-family: FamiljenGrotesk;
+    src: url(/media/FamiljenGrotesk-VariableFont_wght.ttf);
+}
+  
+:root {
+    color: white;
+    font-family: FamiljenGrotesk;
+    font-style: normal;
+    backdrop-filter: blur(25px);
+}
+
+.text1 {
+    font-size: 128px;
+    opacity: 0.75;
+    font-weight: 400;
+}
+
+.text2 {
+    font-size: 32px;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.90);
+}
+
+.text3 {
+    font-size: 24px;
+}
+
+.text4 {
+    font-size: 16px;
+}
+
+.text5 {
+    font-size: 10px;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    height: 100vh;
+    background: url(media/background.png);
+}
+
+body section {
+    align-items: center;
+}
+
+
+/********** MainContainer **********/
+.MainContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 100vh; /* Adjust this value based on your layout requirements */  
+    width: 75%;
+}
+
+.Location {
+    margin: 50px auto;
+    width: 90%;
+    display: flex;
+    justify-content:space-between;
+}
+
+.Location div {
+    display: flex;
+}
+
+.Date {
+    display: flex;
+    vertical-align: middle;
+    justify-content: center;
+}
+
+.Date div {
+    margin: 18px 0 0 0;
+    width: 40px;
+    height: 8px;
+    transform: rotate(-90deg);
+    border-radius: 6px;
+    background: rgba(255, 255, 255, 0.50);
+}
+
+.Weather {
+    margin: 0 auto;
+    margin-bottom: 20px;
+    width: 90%;
+}
+
+.WeatherStatus {
+    text-align: right;
+}
+
+.WeatherStatus div {
+    margin-bottom: 50px;
+    width: 100%;
+    height: 8px;
+    border-radius: 6px;
+    background: rgba(255, 255, 255, 0.30);
+    backdrop-filter: blur(25px);
+}
+
+.WeatherPanel {
+    display: flex;
+    justify-content: space-between;
+}
+
+.WeatherPanel div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 120px;
+    height: 160px;
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.10);
+    backdrop-filter: blur(25px);
+}
+
+.WeatherPanel div:first-child {
+    height: 100%;
+    width: 60px;
+    height: 160px;
+}
+
+
+.WeatherPanel div object {
+    position: absolute;
+    width: 80px;
+    height: 77px;
+}
+
+/********** SidePanel **********/
+
+.SidePanel {
+    width: 25%;
+    border-left: 2px solid rgba(255, 255, 255, 0.10);
+    opacity: 0.95;
+    background: rgba(255, 255, 255, 0.05);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
+    backdrop-filter: blur(30px);
+}
