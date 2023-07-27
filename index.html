@@ -8,7 +8,6 @@
     <link rel="shortcut icon" href="/media/BankWebsite/favicon.ico" type="image/x-icon">
 </head>
 <body>
-    <script src="script.js"></script>
     <script src="https://kit.fontawesome.com/0906644102.js" crossorigin="anonymous"></script>
 </body>
     <section class="MainContainer">
@@ -29,59 +28,111 @@
                 <div></div>
             </div>
             <div class="WeatherPanel">
-                <div>
-                    <p class="text3">H</p>
-                    <p class="text3">D</p>
+                <div class="OptionPanel">
+                    <p class="option text3" id="OptionPanelBtn1" onclick="handleButtonClick(1)">H</p>
+                    <p class="option text3" id="OptionPanelBtn2" onclick="handleButtonClick(2)">D</p>
                 </div>
-                <div>
-                    <p class="text3">8:00</p>
-                    <object type="image/svg+xml" data="media/weather-icons-master/design/fill/animation-ready/cloudy.svg"></object>
-                    <p class="text3">1°C</p>
-                </div>
-                <div>
-                    <p class="text3">8:00</p>
-                    <object type="image/svg+xml" data="your-svg-file.svg"></object>
-                    <p class="text3">1°C</p>
-                </div>
-                <div>
-                    <p class="text3">8:00</p>
-                    <object type="image/svg+xml" data="your-svg-file.svg"></object>
-                    <p class="text3">1°C</p>
-                </div>
-                <div>
-                    <p class="text3">8:00</p>
-                    <object type="image/svg+xml" data="your-svg-file.svg"></object>
-                    <p class="text3">1°C</p>
-                </div>
-                <div>
-                    <p class="text3">8:00</p>
-                    <object type="image/svg+xml" data="your-svg-file.svg"></object>
-                    <p class="text3">1°C</p>
-                </div>
-                <div>
-                    <p class="text3">8:00</p>
-                    <object type="image/svg+xml" data="your-svg-file.svg"></object>
-                    <p class="text3">1°C</p>
-                </div>
-                <div>
-                    <p class="text3">8:00</p>
-                    <object type="image/svg+xml" data="your-svg-file.svg"></object>
-                    <p class="text3">1°C</p>
-                </div>
-                <div>
-                    <p class="text3">8:00</p>
-                    <object type="image/svg+xml" data="your-svg-file.svg"></object>
-                    <p class="text3">1°C</p>
-                </div>
-                <div>
-                    <p class="text3">8:00</p>
-                    <object type="image/svg+xml" data="your-svg-file.svg"></object>
-                    <p class="text3">1°C</p>
+                <div class="WeatherPanelWeather">
+                    <div>
+                        <p class="text3">8:00</p>
+                        <object type="image/svg+xml" data="media/weather-icons-master/design/fill/animation-ready/cloudy.svg"></object>
+                        <p class="text3">1°C</p>
+                    </div>
+                    <div class="checked">
+                        <p class="text3">9:00</p>
+                        <object type="image/svg+xml" data="media/weather-icons-master/design/fill/animation-ready/thunderstorms-day-rain.svg"></object>
+                        <p class="text3">1°C</p>
+                    </div>
+                    <div>
+                        <p class="text3">10:00</p>
+                        <object type="image/svg+xml" data="media/weather-icons-master/design/fill/animation-ready/drizzle.svg"></object>
+                        <p class="text3">1°C</p>
+                    </div>
+                    <div>
+                        <p class="text3">11:00</p>
+                        <object type="image/svg+xml" data="media/weather-icons-master/design/fill/animation-ready/fog-day.svg"></object>
+                        <p class="text3">1°C</p>
+                    </div>
+                    <div>
+                        <p class="text3">12:00</p>
+                        <object type="image/svg+xml" data="media/weather-icons-master/design/fill/animation-ready/hurricane.svg"></object>
+                        <p class="text3">1°C</p>
+                    </div>
+                    <div>
+                        <p class="text3">13:00</p>
+                        <object type="image/svg+xml" data="media/weather-icons-master/design/fill/animation-ready/wind.svg"></object>
+                        <p class="text3">1°C</p>
+                    </div>
+                    <div>
+                        <p class="text3">14:00</p>
+                        <object type="image/svg+xml" data="media/weather-icons-master/design/fill/animation-ready/partly-cloudy-night-drizzle.svg"></object>
+                        <p class="text3">1°C</p>
+                    </div>
+                    <div>
+                        <p class="text3">15:00</p>
+                        <object type="image/svg+xml" data="media/weather-icons-master/design/fill/animation-ready/rain.svg"></object>
+                        <p class="text3">1°C</p>
+                    </div>
+                    <div>
+                        <p class="text3">16:00</p>
+                        <object type="image/svg+xml" data="media/weather-icons-master/design/fill/animation-ready/thunderstorms-snow.svg"></object>
+                        <p class="text3">1°C</p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
     <section class="SidePanel">
-
+        <div class="SearchBar">
+            <input type="text" placeholder="Ahoj">
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+        <div class="WeatherTemperature">
+            <p class="text1"><span>3°C</span></p>
+            <div class="Wind">
+                <object type="image/svg+xml" data="media/weather-icons-master/design/fill/animation-ready/windsock.svg"></object>
+                <p class="text4"><span>Southeast, 41.8 km/h</span></p>
+            </div>
+            <div></div>
+        </div>
+        <div class="DetailedInfo">
+            <p class="text3">Detailed information</p>
+            <div class="dInfoSection">
+                <div class="dInfoContainer">
+                    <div>
+                        <object type="image/svg+xml" data="media/weather-icons-master/design/fill/animation-ready/humidity.svg"></object>
+                        <p class="text3">Humidity</p>
+                    </div>
+                    <p class="text3">43%</p>
+                </div>
+                <div class="dInfoContainer">
+                    <div>
+                        <object type="image/svg+xml" data="media/weather-icons-master/design/fill/animation-ready/pressure-high-alt.svg"></object>
+                        <p class="text3">Pressure</p>
+                    </div>
+                    <p class="text3">1015.9 mb</p>
+                </div>
+                <div class="dInfoContainer">
+                    <div>
+                        <object type="image/svg+xml" data="media/weather-icons-master/design/fill/animation-ready/raindrops.svg"></object>
+                        <p class="text3">Dew Point</p>
+                    </div>
+                    <p class="text3">13°C</p>
+                </div>
+                <div class="dInfoContainer">
+                    <div>
+                        <object type="image/svg+xml" data="media/weather-icons-master/design/fill/animation-ready/uv-index-2.svg"></object>
+                        <p class="text3">UV Index</p>
+                    </div>
+                    <p class="text3">2 of 11</p>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+                <p class="text5">© 2023 MeteorSky</p>
+                <p class="text5">Created by: <a href="http://google.com" target="_blank" rel="noopener noreferrer">JirikPos</a></p>
+                <p class="text5"><a href="http://weather.com" target="_blank" rel="noopener noreferrer">Weather.com</a></p>
+        </div>
     </section>
+    <script src="script.js"></script>
 </html>
