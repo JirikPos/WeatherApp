@@ -60,7 +60,7 @@
 body {
     display: flex;
     height: 100vh;
-    background: url(media/background.webp);
+    background: url(media/background.webp), lightgray 50%;
     background-repeat: no-repeat; 
     background-size: cover; 
     background-position: center center;
@@ -123,7 +123,7 @@ body section {
 }
 
 .WeatherStatus p {
-    opacity: 0.75;
+    opacity: 0.9;
 }
 
 .WeatherStatus div {
@@ -155,7 +155,11 @@ body section {
     min-width: 120px;
     min-height: 160px;
     border-radius: 12px;
-    background: rgb(51,56,64);
+    background: rgba(51, 56, 64, 0.9);
+}
+
+.WeatherPanelWeather div p {
+    opacity: 0.9;
 }
 
 .OptionPanel {
@@ -177,11 +181,11 @@ body section {
     cursor: pointer;
     padding: 3.5px 8px 7px 8px;
     border-radius: 12px;
+    opacity: 0.9;
 }
 
 .checked {
     border-radius: 12px;
-    background: rgba(255, 255, 255, 0.20);
     box-shadow: 2px 0px 50px 0px rgba(255, 255, 255, 0.30) inset;
     backdrop-filter: blur(25px);
 }
@@ -284,7 +288,7 @@ body section {
     text-align: center;
     margin: 50px auto;
     width: 85%;
-    height: 40%;
+    height: 39%;
 }
 
 .DetailedInfo p:first-child {
